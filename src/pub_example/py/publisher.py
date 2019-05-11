@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import rospy
 from geometry_msgs.msg import Pose2D
 from graphical_client.msg import Pose2D_Array
@@ -5,7 +6,6 @@ import sympy
 import sympy as sym
 from sympy.abc import s
 from sympy.geometry import Point, Circle,Segment, intersection
-
 
 poseSelf= Pose2D()
 poseTarget= Pose2D()
@@ -74,37 +74,75 @@ def callbackObs7(dataObs):
     poseObs7.y = dataObs.y
     poseObs7.theta = dataObs.theta
 
+def calcCircs():
+    obsCirculo=[]
+    obsCirculo.append(Circle(Point(int(poseObs0.x),int(poseObs0.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs2.x),int(poseObs2.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs3.x),int(poseObs3.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs4.x),int(poseObs4.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs5.x),int(poseObs5.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs6.x),int(poseObs6.y)), 180))
+    obsCirculo.append(Circle(Point(int(poseObs7.x),int(poseObs7.y)), 180))
+    return obsCirculo;
+
+def calcIntersect(circles,segment):
+    intersect=[]
+    intersect.append(intersection(circles[0],segment))
+    intersect.append(intersection(circles[1],segment))
+    intersect.append(intersection(circles[2],segment))
+    intersect.append(intersection(circles[3],segment))
+    intersect.append(intersection(circles[4],segment))
+    intersect.append(intersection(circles[5],segment))
+    intersect.append(intersection(circles[6],segment))
+    intersect.append(intersection(circles[7],segment))
+    return intersect;
+# def intersectNotEmpty():
+
+# # regresa un objeto Point para librar el obstaculo en cuestion
+# def recalc(inter, centro):
+#     a= inter[0]
+#     b= inter[1]
+
 def talker():
     pub = rospy.Publisher('/trajectory', Pose2D_Array, queue_size=10)
     rospy.Subscriber('/y_r0', Pose2D, callbackSelf)
     rospy.Subscriber('/ball', Pose2D, callbackTarget)
     rospy.Subscriber('/b_r0', Pose2D, callbackObs0)
-    # rospy.Subscriber('/b_r1', Pose2D, callbackB1)
-    # rospy.Subscriber('/b_r2', Pose2D, callbackB2)
-    # rospy.Subscriber('/b_r3', Pose2D, callbackB3)
-    # rospy.Subscriber('/b_r4', Pose2D, callbackB4)
-    # rospy.Subscriber('/b_r5', Pose2D, callbackB5)
-    # rospy.Subscriber('/b_r6', Pose2D, callbackB6)
-    # rospy.Subscriber('/b_r7', Pose2D, callbackB7)
+    rospy.Subscriber('/b_r2', Pose2D, callbackObs2)
+    rospy.Subscriber('/b_r1', Pose2D, callbackObs1)
+    rospy.Subscriber('/b_r3', Pose2D, callbackObs3)
+    rospy.Subscriber('/b_r4', Pose2D, callbackObs4)
+    rospy.Subscriber('/b_r5', Pose2D, callbackObs5)
+    rospy.Subscriber('/b_r6', Pose2D, callbackObs6)
+    rospy.Subscriber('/b_r7', Pose2D, callbackObs7)
     rospy.init_node('talker', anonymous=True)
     rate = rospy.Rate(1) # 10hz!!!! CAMBIARLO
+
     while not rospy.is_shutdown():
         arr = Pose2D_Array()  #contiene la salida del nodo
-        arr.poses.append(poseSelf)
-        arr.poses.append(poseTarget)
-        for x in range(0,10):
-            c0 = Circle(Point(int(poseObs0.x),int(poseObs0.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-            c1=Circle(Point(int(poseObs1.x),int(poseObs1.y)), 180)
-        s = Segment(Point(int(poseSelf.x),int(poseSelf.y)),Point(int(poseTarget.x),int(poseTarget.y)))
+        arr.poses.append(poseSelf) #el primer punto siempre es donde se encuentra el robot actualmente
+        obstacles= calcCircs()
+        trajectory = Segment(Point(int(poseSelf.x),int(poseSelf.y)),Point(int(poseTarget.x),int(poseTarget.y)))
+        intersections= calcIntersect(obstacles, trajectory)
+        numIntersect= len(intersections[0])+len(intersections[1])+len(intersections[2])+len(intersections[3])+len(intersections[4])+len(intersections[5])+len(intersections[6])+len(intersections[7])
+
+        if numIntersect==0:
+            arr.poses.append(poseTarget)
+        # else:
+        #     while not numIntersect==0:
+        #         if len(intersection[0])==2 :
+        #             recalc(intersection0,poseObs0)
+        #         if len(intersection[1])==2 :
+        #             recalc(intersection1,poseObs1)
+        #         if len(intersections[2])==2 :
+        #             recalc(intersection2,poseObs2)
+        #         numIntersect= len(intersection0)+len(intersection1)+len(intersection2)+len(intersection3)+len(intersection4)+len(intersection5)+len(intersection6)+len(intersection7)
+
 
         print "The array is:", arr
-        print "Intersection with obstacle 0 is:",intersection(c0,s)
+        print "Length intersection0: ",len(intersections[0])
+        print "Length intersection1: ",len(intersections[1])
         pub.publish(arr)
         rate.sleep()
 
