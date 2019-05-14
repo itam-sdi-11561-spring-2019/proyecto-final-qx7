@@ -1,2 +1,2 @@
-graphical_client:pub_example:ssl_shared_library
+graphical_client:nav_controller:ssl_shared_library:trajectory_planner
 -DCATKIN_DEVEL_PREFIX=/home/lgarciaos/proyecto-final-qx7/devel -DCMAKE_INSTALL_PREFIX=/home/lgarciaos/proyecto-final-qx7/install -G Unix Makefiles

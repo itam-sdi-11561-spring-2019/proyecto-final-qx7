@@ -348,7 +348,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=lgarciaos-MacBookPro
+SITE:STRING=lgarciaos-z170xp
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -451,7 +451,7 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/melodic/lib/librostime.so
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
@@ -460,10 +460,10 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //Value Computed by CMake
-pub_example_BINARY_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/build/pub_example
+nav_controller_BINARY_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/build/nav_controller
 
 //Value Computed by CMake
-pub_example_SOURCE_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/src/pub_example
+nav_controller_SOURCE_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/src/nav_controller
 
 //Dependencies for the target
 robocup_client_lib_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libprotobuf.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;
@@ -483,6 +483,9 @@ roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
@@ -497,6 +500,15 @@ ssl_shared_library_SOURCE_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/src/ssl_
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for sympy.
+sympy_DIR:PATH=sympy_DIR-NOTFOUND
+
+//Value Computed by CMake
+trajectory_planner_BINARY_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/build/trajectory_planner
+
+//Value Computed by CMake
+trajectory_planner_SOURCE_DIR:STATIC=/home/lgarciaos/proyecto-final-qx7/src/trajectory_planner
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -623,7 +635,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

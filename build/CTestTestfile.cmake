@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("pub_example")
 subdirs("ssl_shared_library")
 subdirs("graphical_client")
+subdirs("nav_controller")
+subdirs("trajectory_planner")

@@ -1,8 +1,0 @@
-prefix=/home/lgarciaos/proyecto-final-qx7/devel
-
-Name: pub_example
-Description: Description of pub_example
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/lgarciaos/proyecto-final-qx7/devel/lib 
-Requires: 

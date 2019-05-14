@@ -1,0 +1,8 @@
+prefix=/home/lgarciaos/proyecto-final-qx7/install
+
+Name: trajectory_planner
+Description: Description of trajectory_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lgarciaos/proyecto-final-qx7/install/lib 
+Requires: 

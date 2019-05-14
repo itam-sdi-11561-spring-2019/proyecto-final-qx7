@@ -1,0 +1,8 @@
+prefix=/home/lgarciaos/proyecto-final-qx7/devel
+
+Name: nav_controller
+Description: Description of nav_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lgarciaos/proyecto-final-qx7/devel/lib 
+Requires: 
