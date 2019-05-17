@@ -17,6 +17,7 @@ poseObs4= Pose2D()
 poseObs5= Pose2D()
 poseObs6= Pose2D()
 poseObs7= Pose2D()
+newP[]
 
 def init_pose():
     pose = Pose2D()
@@ -98,11 +99,16 @@ def calcIntersect(circles,segment):
     intersect.append(intersection(circles[7],segment))
     return intersect;
 # def intersectNotEmpty():
-
-# # regresa un objeto Point para librar el obstaculo en cuestion
-# def recalc(inter, centro):
-#     a= inter[0]
-#     b= inter[1]
+def arrange(arr):
+    n= len(arr)
+    for n in range(n):
+        
+# regresa un objeto Point para librar el obstaculo en cuestion
+def recalc(inter, centro):
+    a= inter[0]
+    b= inter[1]
+    seg= Segment(a,b)
+    c= seg.midpoint
 
 def talker():
     pub = rospy.Publisher('/trajectory', Pose2D_Array, queue_size=10)
@@ -116,33 +122,45 @@ def talker():
     rospy.Subscriber('/b_r5', Pose2D, callbackObs5)
     rospy.Subscriber('/b_r6', Pose2D, callbackObs6)
     rospy.Subscriber('/b_r7', Pose2D, callbackObs7)
-    rospy.init_node('talker', anonymous=True)
-    rate = rospy.Rate(1) # 10hz!!!! CAMBIARLO
+    rospy.init_node('planner')
+    rate = rospy.Rate(.5) # 10hz!!!! CAMBIARLO
 
     while not rospy.is_shutdown():
+        pointSelf= Point(int(poseSelf.x),int(poseSelf.y))
+        pointTarget= Point(int(poseTarget.x),int(poseTarget.y))
         arr = Pose2D_Array()  #contiene la salida del nodo
         arr.poses.append(poseSelf) #el primer punto siempre es donde se encuentra el robot actualmente
         obstacles= calcCircs()
-        trajectory = Segment(Point(int(poseSelf.x),int(poseSelf.y)),Point(int(poseTarget.x),int(poseTarget.y)))
+        trajectory = Segment(pointSelf,pointTarget)
         intersections= calcIntersect(obstacles, trajectory)
         numIntersect= len(intersections[0])+len(intersections[1])+len(intersections[2])+len(intersections[3])+len(intersections[4])+len(intersections[5])+len(intersections[6])+len(intersections[7])
 
         if numIntersect==0:
             arr.poses.append(poseTarget)
-        # else:
-        #     while not numIntersect==0:
-        #         if len(intersection[0])==2 :
-        #             recalc(intersection0,poseObs0)
-        #         if len(intersection[1])==2 :
-        #             recalc(intersection1,poseObs1)
-        #         if len(intersections[2])==2 :
-        #             recalc(intersection2,poseObs2)
-        #         numIntersect= len(intersection0)+len(intersection1)+len(intersection2)+len(intersection3)+len(intersection4)+len(intersection5)+len(intersection6)+len(intersection7)
+        else:
+            while not numIntersect==0 :
+                if len(intersections[0])==2 :
+                    newP.append(recalc(intersections[0],poseObs0))
+                if len(intersections[1])==2 :
+                    newP.append(recalc(intersections[1],poseObs1))
+                if len(intersections[2])==2 :
+                    newP.append(recalc(intersections[2],poseObs2))
+                if len(intersections[3])==2 :
+                    newP.append(recalc(intersections[3],poseObs3))
+                if len(intersections[4])==2 :
+                    newP.append(recalc(intersections[4],poseObs4))
+                if len(intersections[5])==2 :
+                    newP.append(recalc(intersections[5],poseObs5))
+                if len(intersections[6])==2 :
+                    newP.append(recalc(intersections[6],poseObs6))
+                if len(intersectiosn[7])==2 :
+                    newP.append(recalc(intersections[7],poseObs7))
+                arrange(newP)
 
+
+                numIntersect= len(intersections[0])+len(intersections[1])+len(intersections[2])+len(intersections[3])+len(intersections[4])+len(intersections[5])+len(intersections[6])+len(intersections[7])
 
         print "The array is:", arr
-        print "Length intersection0: ",len(intersections[0])
-        print "Length intersection1: ",len(intersections[1])
         pub.publish(arr)
         rate.sleep()
 
