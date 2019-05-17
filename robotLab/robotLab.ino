@@ -26,8 +26,8 @@
 
 #define MOTOR_L1 4
 #define MOTOR_L2 5
-#define MOTOR_R1 2
-#define MOTOR_R2 3
+#define MOTOR_R1 3
+#define MOTOR_R2 2
 #define LED_PHOTO_L 9
 #define LED_PHOTO_R 8
 #define PHOTO_DET_L 21
@@ -38,9 +38,9 @@
 #define H_VCC 25
 
 #define DEBUG 2
-#define ENC_DEBOUNCE 2 //ms
-#define LOOP_DELTA 200 //ms loop time
-#define LOOP_NAV 500 //ms vel loop tiene que ser de 500ms
+#define ENC_DEBOUNCE 1 //ms
+#define LOOP_DELTA 100 //ms loop time
+#define LOOP_NAV 2000 //ms vel loop tiene que ser de 500ms
 #define Kp 3.5    // Ganancia Proporcional
 #define Ki 2  //Ganancia control Integral
 #define Kd 0.6  //Ganancia parte Derivativa
@@ -98,10 +98,12 @@ void setup() {
   nh.subscribe(sub);
 
   v=w=0;
+  pwmLeft=pwmRight=0 ;
 }
 
 void loop() {
   if(millis()-lastNav> LOOP_NAV){
+    /*
     if (DEBUG>1) {
       if(stringComplete){
         Serial.println(inputString);
@@ -115,14 +117,16 @@ void loop() {
       calcSetpoint();
       str_msg.data= hello;
       nh.spinOnce();
-      lastNav=millis();
+      
       digitalWrite(13,LOW);
-    }
+    }*/
+    lastNav=millis();
   }
   if(millis()-lastLoop> LOOP_DELTA){
     calcVel();
-    calcPID();
-
+    //calcPID();
+    
+    
     setMotor(pwmLeft,pwmRight);
 
     if(DEBUG>1){
