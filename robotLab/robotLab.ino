@@ -37,13 +37,13 @@
 #define H_ENA 24
 #define H_VCC 25
 
-#define DEBUG 2
-#define ENC_DEBOUNCE 1 //ms
-#define LOOP_DELTA 100 //ms loop time
-#define LOOP_NAV 2000 //ms vel loop tiene que ser de 500ms
-#define Kp 3.5    // Ganancia Proporcional
-#define Ki 2  //Ganancia control Integral
-#define Kd 0.6  //Ganancia parte Derivativa
+#define DEBUG 1
+#define ENC_DEBOUNCE 2 //ms
+#define LOOP_DELTA 80 //ms loop time
+#define LOOP_NAV 200 //ms vel loop tiene que ser de 500ms
+#define Kp 3    // Ganancia Proporcional
+#define Ki 1.6  //Ganancia control Integral
+#define Kd 0.95  //Ganancia parte Derivativa
 
 volatile int counter_left=0, counter_right=0;
 unsigned long last_lcounter_compare=0,last_rcounter_compare=0, lastLoop=0, lastNav=0;
@@ -98,12 +98,10 @@ void setup() {
   nh.subscribe(sub);
 
   v=w=0;
-  pwmLeft=pwmRight=0 ;
 }
 
 void loop() {
   if(millis()-lastNav> LOOP_NAV){
-    /*
     if (DEBUG>1) {
       if(stringComplete){
         Serial.println(inputString);
@@ -119,12 +117,12 @@ void loop() {
       nh.spinOnce();
       
       digitalWrite(13,LOW);
-    }*/
+    }
     lastNav=millis();
   }
   if(millis()-lastLoop> LOOP_DELTA){
     calcVel();
-    //calcPID();
+    calcPID();
     
     
     setMotor(pwmLeft,pwmRight);
@@ -171,10 +169,14 @@ void calcPID(){
 
   lastError_L= error_L;
   lastError_R= error_R;
+  if(setpoint_L==0 &&setpoint_R==0){
+    pwmLeft=pwmRight=0;
+  }
+    
 }
 void calcVel(){
   vel_L= counter_left*150.0/LOOP_DELTA; //ticks per loop
-  vel_R= counter_right*128.0/LOOP_DELTA;
+  vel_R= counter_right*150.0/LOOP_DELTA;
   if(pwmLeft<0)
     vel_L= -1.0*vel_L;
   if (pwmRight<0)
