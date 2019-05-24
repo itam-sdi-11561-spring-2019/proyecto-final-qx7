@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphical_client_node.dir/soccerview.cpp.o"
   "CMakeFiles/graphical_client_node.dir/graphical_client_node.cpp.o"
   "CMakeFiles/graphical_client_node.dir/gltext.cpp.o"
-  "/home/lgarciaos/proyecto-final-qx7/devel/lib/graphical_client/graphical_client_node.pdb"
-  "/home/lgarciaos/proyecto-final-qx7/devel/lib/graphical_client/graphical_client_node"
+  "/home/hmartiney/proyecto-final-qx7/devel/lib/graphical_client/graphical_client_node.pdb"
+  "/home/hmartiney/proyecto-final-qx7/devel/lib/graphical_client/graphical_client_node"
 )
 
 # Per-language clean rules from dependency scanning.

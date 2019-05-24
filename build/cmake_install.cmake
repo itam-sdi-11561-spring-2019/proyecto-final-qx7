@@ -1,8 +1,8 @@
-# Install script for directory: /home/lgarciaos/proyecto-final-qx7/src
+# Install script for directory: /home/hmartiney/proyecto-final-qx7/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lgarciaos/proyecto-final-qx7/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hmartiney/proyecto-final-qx7/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -49,92 +49,82 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/_setup_util.py")
+   "/home/hmartiney/proyecto-final-qx7/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE PROGRAM FILES "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE PROGRAM FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/env.sh")
+   "/home/hmartiney/proyecto-final-qx7/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE PROGRAM FILES "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE PROGRAM FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/setup.bash;/home/lgarciaos/proyecto-final-qx7/install/local_setup.bash")
+   "/home/hmartiney/proyecto-final-qx7/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE FILE FILES
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/setup.bash"
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/local_setup.bash"
-    )
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/setup.sh;/home/lgarciaos/proyecto-final-qx7/install/local_setup.sh")
+   "/home/hmartiney/proyecto-final-qx7/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE FILE FILES
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/setup.sh"
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/local_setup.sh"
-    )
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/setup.zsh;/home/lgarciaos/proyecto-final-qx7/install/local_setup.zsh")
+   "/home/hmartiney/proyecto-final-qx7/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE FILE FILES
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/setup.zsh"
-    "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/local_setup.zsh"
-    )
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/lgarciaos/proyecto-final-qx7/install/.rosinstall")
+   "/home/hmartiney/proyecto-final-qx7/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/lgarciaos/proyecto-final-qx7/install" TYPE FILE FILES "/home/lgarciaos/proyecto-final-qx7/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/hmartiney/proyecto-final-qx7/install" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lgarciaos/proyecto-final-qx7/build/gtest/cmake_install.cmake")
-  include("/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/cmake_install.cmake")
-  include("/home/lgarciaos/proyecto-final-qx7/build/graphical_client/cmake_install.cmake")
-  include("/home/lgarciaos/proyecto-final-qx7/build/nav_controller/cmake_install.cmake")
-  include("/home/lgarciaos/proyecto-final-qx7/build/trajectory_planner/cmake_install.cmake")
+  include("/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/cmake_install.cmake")
+  include("/home/hmartiney/proyecto-final-qx7/build/graphical_client/cmake_install.cmake")
+  include("/home/hmartiney/proyecto-final-qx7/build/nav_controller/cmake_install.cmake")
+  include("/home/hmartiney/proyecto-final-qx7/build/trajectory_planner/cmake_install.cmake")
 
 endif()
 
@@ -146,5 +136,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lgarciaos/proyecto-final-qx7/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hmartiney/proyecto-final-qx7/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

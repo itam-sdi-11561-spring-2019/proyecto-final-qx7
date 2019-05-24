@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graphical_client_generate_messages_lisp"
-  "/home/lgarciaos/proyecto-final-qx7/devel/share/common-lisp/ros/graphical_client/msg/Pose2D_Array.lisp"
+  "/home/hmartiney/proyecto-final-qx7/devel/share/common-lisp/ros/graphical_client/msg/Pose2D_Array.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

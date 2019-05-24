@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/lgarciaos/proyecto-final-qx7/build"
+export CMAKE_PREFIX_PATH="/home/hmartiney/proyecto-final-qx7/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/hmartiney/proyecto-final-qx7/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/hmartiney/proyecto-final-qx7/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/hmartiney/proyecto-final-qx7/src:$ROS_PACKAGE_PATH"

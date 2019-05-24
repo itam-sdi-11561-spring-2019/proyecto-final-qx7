@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graphical_client_generate_messages_cpp"
-  "/home/lgarciaos/proyecto-final-qx7/devel/include/graphical_client/Pose2D_Array.h"
+  "/home/hmartiney/proyecto-final-qx7/devel/include/graphical_client/Pose2D_Array.h"
 )
 
 # Per-language clean rules from dependency scanning.
