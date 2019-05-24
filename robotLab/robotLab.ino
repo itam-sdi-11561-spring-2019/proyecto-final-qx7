@@ -24,10 +24,10 @@
 #include <std_msgs/String.h>
 #include <geometry_msgs/Pose2D.h>
 
-#define MOTOR_L1 4
-#define MOTOR_L2 5
-#define MOTOR_R1 3
-#define MOTOR_R2 2
+#define MOTOR_L1 5
+#define MOTOR_L2 4
+#define MOTOR_R1 2
+#define MOTOR_R2 3
 #define LED_PHOTO_L 9
 #define LED_PHOTO_R 8
 #define PHOTO_DET_L 21
@@ -150,8 +150,8 @@ void messageCb(const geometry_msgs::Pose2D& data){
    chatter.publish(&str_msg);
 }
 void calcSetpoint(){
-  setpoint_L= 0.047*v-2.71*w;
-  setpoint_R= 0.047*v+2.71*w;
+  setpoint_L= 0.047*v+2.71*w;
+  setpoint_R= 0.047*v-2.71*w;
 }
 void calcPID(){
   error_L= setpoint_L- vel_L;

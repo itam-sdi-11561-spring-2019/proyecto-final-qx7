@@ -29,17 +29,21 @@ def navigator():
     rospy.Subscriber('/trajectory', Pose2D_Array, callbackTrajectory)
     rospy.Subscriber('/y_r0', Pose2D, callbackSelf)
     rospy.init_node('navigation')
-    rate= rospy.Rate(1) # Hz
+    rate= rospy.Rate(5) # Hz
     while not rospy.is_shutdown():
         pSelf=Point(poseSelf.x,poseSelf.y)
         pNav=Point(poseNav.x,poseNav.y)
         dist= pSelf.distance(pNav)
+        print "Dist: ",dist
         s= math.atan2(poseNav.y-poseSelf.y,poseNav.x-poseSelf.x)
-        velVector.theta= s-poseSelf.theta
+        angleErr=s-poseSelf.theta
+
+        print "Angle error: ",angleErr
+        velVector.theta= 0.1*(angleErr)
         if(dist>500):
-            v= 350
+            v= 220
         elif(dist>100):
-            v=0.3*dist +230
+            v=0.2*dist +180
         else:
             v=200
         velVector.x= v

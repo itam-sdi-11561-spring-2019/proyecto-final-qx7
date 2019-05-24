@@ -152,7 +152,7 @@ def planner():
     rospy.Subscriber('/b_r6', Pose2D, callbackObs6)
     rospy.Subscriber('/b_r7', Pose2D, callbackObs7)
     rospy.init_node('planner')
-    rate = rospy.Rate(1)
+    rate = rospy.Rate(2)
     # time.sleep(1)
 
     while not rospy.is_shutdown():
