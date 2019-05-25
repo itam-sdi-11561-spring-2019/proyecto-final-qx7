@@ -1,8 +1,8 @@
-# Install script for directory: /home/hmartiney/proyecto-final-qx7/src/ssl_shared_library
+# Install script for directory: /home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hmartiney/proyecto-final-qx7/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lgarciaos/proyecto-final-qx7/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_library.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_library.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ssl_shared_library/cmake" TYPE FILE FILES
-    "/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_libraryConfig.cmake"
-    "/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_libraryConfig-version.cmake"
+    "/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_libraryConfig.cmake"
+    "/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/catkin_generated/installspace/ssl_shared_libraryConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ssl_shared_library" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ssl_shared_library" TYPE FILE FILES "/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobocup_client_lib.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/hmartiney/proyecto-final-qx7/devel/lib/librobocup_client_lib.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/lgarciaos/proyecto-final-qx7/devel/lib/librobocup_client_lib.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobocup_client_lib.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librobocup_client_lib.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -70,8 +70,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ssl_shared_library" TYPE DIRECTORY FILES
-    "/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net"
-    "/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/util"
+    "/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net"
+    "/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/util"
     FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.git$" EXCLUDE)
 endif()
 

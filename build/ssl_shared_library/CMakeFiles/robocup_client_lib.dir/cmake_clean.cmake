@@ -19,8 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/robocup_client_lib.dir/messages_robocup_ssl_wrapper_legacy.pb.cc.o"
   "CMakeFiles/robocup_client_lib.dir/net/netraw.cpp.o"
   "CMakeFiles/robocup_client_lib.dir/net/robocup_ssl_client.cpp.o"
-  "/home/hmartiney/proyecto-final-qx7/devel/lib/librobocup_client_lib.pdb"
-  "/home/hmartiney/proyecto-final-qx7/devel/lib/librobocup_client_lib.so"
+  "/home/lgarciaos/proyecto-final-qx7/devel/lib/librobocup_client_lib.pdb"
+  "/home/lgarciaos/proyecto-final-qx7/devel/lib/librobocup_client_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

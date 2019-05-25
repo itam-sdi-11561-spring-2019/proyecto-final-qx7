@@ -54,9 +54,9 @@ def navigator():
         print "Angle error: ",angleErr
         velVector.theta= -0.3*(angleErr)
         if(dist>500):
-            v= 220
+            v= 350
         elif(dist>100):
-            v=0.2*dist +180
+            v=0.3*dist +230
         else:
             v=200
         velVector.x= v

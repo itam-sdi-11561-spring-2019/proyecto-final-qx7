@@ -1,8 +1,8 @@
-# Install script for directory: /home/hmartiney/proyecto-final-qx7/src/nav_controller
+# Install script for directory: /home/lgarciaos/proyecto-final-qx7/src/nav_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hmartiney/proyecto-final-qx7/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lgarciaos/proyecto-final-qx7/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controller.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lgarciaos/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controller.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_controller/cmake" TYPE FILE FILES
-    "/home/hmartiney/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controllerConfig.cmake"
-    "/home/hmartiney/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controllerConfig-version.cmake"
+    "/home/lgarciaos/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controllerConfig.cmake"
+    "/home/lgarciaos/proyecto-final-qx7/build/nav_controller/catkin_generated/installspace/nav_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_controller" TYPE FILE FILES "/home/hmartiney/proyecto-final-qx7/src/nav_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nav_controller" TYPE FILE FILES "/home/lgarciaos/proyecto-final-qx7/src/nav_controller/package.xml")
 endif()
 

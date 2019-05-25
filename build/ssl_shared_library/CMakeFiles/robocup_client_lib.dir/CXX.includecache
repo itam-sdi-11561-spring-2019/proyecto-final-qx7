@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.cc
 messages_robocup_ssl_detection.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -29,21 +29,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -58,9 +52,9 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.cc
 messages_robocup_ssl_geometry.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -81,21 +75,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -110,9 +98,9 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.cc
 messages_robocup_ssl_geometry_legacy.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -133,21 +121,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -162,11 +144,11 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 messages_robocup_ssl_geometry.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.cc
 messages_robocup_ssl_refbox_log.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -187,21 +169,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_refbox_log.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -216,11 +192,11 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 messages_robocup_ssl_detection.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.cc
 messages_robocup_ssl_wrapper.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -241,21 +217,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -270,13 +240,13 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 messages_robocup_ssl_detection.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
 messages_robocup_ssl_geometry.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry.pb.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.cc
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.cc
 messages_robocup_ssl_wrapper_legacy.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
@@ -297,21 +267,15 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/third_party/protobuf/version.h
 
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_wrapper_legacy.pb.h
 string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -326,11 +290,11 @@ google/protobuf/extension_set.h
 google/protobuf/unknown_field_set.h
 -
 messages_robocup_ssl_detection.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_detection.pb.h
 messages_robocup_ssl_geometry_legacy.pb.h
-/home/hmartiney/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
+/home/lgarciaos/proyecto-final-qx7/build/ssl_shared_library/messages_robocup_ssl_geometry_legacy.pb.h
 
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/netraw.cpp
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/netraw.cpp
 sys/types.h
 -
 sys/socket.h
@@ -346,11 +310,11 @@ unistd.h
 fcntl.h
 -
 util.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/util.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/util.h
 netraw.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
 
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
 sys/types.h
 -
 sys/socket.h
@@ -364,25 +328,25 @@ stdio.h
 string.h
 -
 
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.cpp
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.cpp
 robocup_ssl_client.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.h
 
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/robocup_ssl_client.h
 netraw.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/netraw.h
 string
 -
 messages_robocup_ssl_detection.pb.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_detection.pb.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_detection.pb.h
 messages_robocup_ssl_geometry.pb.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_geometry.pb.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_geometry.pb.h
 messages_robocup_ssl_wrapper.pb.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_wrapper.pb.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_wrapper.pb.h
 messages_robocup_ssl_refbox_log.pb.h
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_refbox_log.pb.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/net/messages_robocup_ssl_refbox_log.pb.h
 
-/home/hmartiney/proyecto-final-qx7/src/ssl_shared_library/util/util.h
+/home/lgarciaos/proyecto-final-qx7/src/ssl_shared_library/util/util.h
 math.h
 -
 string.h
@@ -395,13 +359,9 @@ string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -421,13 +381,9 @@ string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -447,13 +403,9 @@ string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
@@ -475,13 +427,9 @@ string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
 google/protobuf/arena.h
 -
 google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
 -
 google/protobuf/generated_message_util.h
 -
